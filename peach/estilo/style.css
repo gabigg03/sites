@@ -2,6 +2,10 @@
     font-family:'depo' ;
     src: url('../fonts/Deposta.otf') format('opentype');
 }
+@font-face {
+    font-family:'cata' ;
+    src: url('../fonts/Catamaran-Thin.ttf') format('truetype');
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -9,7 +13,8 @@
 
 html, body{
     height: 100vh;
-
+    background-color: var(--rosa1);
+    font-family:'cata';
 }
 
 :root{
@@ -30,9 +35,54 @@ header h1{
    font-size: 3.5em;
    text-align: center;
    color: white;
-   padding: 30px;
+   padding: 20px;
    text-shadow: 2px 2px 0px rgba(228, 26, 93, 0.658);
+}
+header nav{
+    background-color: var(--rosa2);
+    margin: auto;
+    width: 500px;
+    padding: 8px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.096);
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    margin: 35px;
+}
+nav a:hover{
+    background-color: white;
+    color: var(--rosa3);
+    padding: 5px;
+    border-radius: 20px;
+    transition-duration: 0.6s;
 }
 main{
     background-color: rgb(247, 247, 247);
+    width: 65vw;
+    margin: auto;
+}
+article{
+    margin: 20px;
+    position: relative;
+    height: 50vh;
+    padding: 10px;
+}
+article ul{
+    margin-left: 20px;
+}
+#texto{
+    width: 30vw;
+    line-height: 2em;
+    
+}
+img{
+    position: absolute;
+    left: 55%;
+    top: 20%;
+}
+#texto2{
+    margin-top: 80px;
 }
