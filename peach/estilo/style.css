@@ -1,3 +1,7 @@
+@font-face {
+    font-family:'depo' ;
+    src: url('../fonts/Deposta.otf') format('opentype');
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -16,4 +20,19 @@ html, body{
     --amar1:#fdefb4;
     --amar2:#ffc28f;
 }
+header{
+    background-color: var(--rosa3);
+    height: 180px;
+}
 
+header h1{
+   font-family: 'depo';
+   font-size: 3.5em;
+   text-align: center;
+   color: white;
+   padding: 30px;
+   text-shadow: 2px 2px 0px rgba(228, 26, 93, 0.658);
+}
+main{
+    background-color: rgb(247, 247, 247);
+}
