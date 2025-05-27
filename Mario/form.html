@@ -10,10 +10,13 @@
         }
         fieldset{
             width: 70%;
+            margin: 10px;
         }
         div{
             margin: 20px;
         }
+       
+        
     </style>
 </head>
 <body>
@@ -45,18 +48,35 @@
             </div>
           
         
-        </form>
+       
     </fieldset>
     <fieldset>
         <legend>About Mario games...</legend>
-        <form action="mario.php" method="post">
+        
             <div>
                 <p>Which one is your favorite Mario game from Switch:</p>
                 <input type="radio" name="game" id="imk" value="MK"><label for="imk">Mario kart Deluxe 8</label> <br>
-                <input type="radio" name="game" id="imo"><label for="imo">Super Mario Odyssey</label>
-                <input type="radio" name="game" id="imp" value="Mp">
+                <input type="radio" name="game" id="imo"><label for="imo">Super Mario Odyssey</label> <br>
+              <input type="radio" name="game" id="imp"><label for="imp">Mario Party Jamboree</label> <br>
+              <input type="radio" name="game" id="imw"> <label for="imw">Super Mario Bros. Wonder</label>
             </div>
+            <div>
+                <p>If you could visit the mushroon kingdoon, would you?</p>
+                <input type="radio" name="mush" id="iyes"> <label for="iyes">Yes absolutely</label> <br>
+                <input type="radio" name="mush" id="imay"> <label for="imay">Maybe</label> <br>
+                <input type="radio" name="mush" id="ino">
+                <label for="ino">NO</label>
+
+            </div>
+            <div>
+                <p>What color are Mario's clothes?</p>
+                <input type="color" name="color" id="icolor">
+            </div>
+        </fieldset>
+         <input type="submit" value="Send">
+         <input type="reset" value="Clean">
         </form>
-    </fieldset>
+    
+
 </body>
 </html>
